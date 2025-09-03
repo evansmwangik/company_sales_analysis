@@ -16,7 +16,7 @@ In this project, I go through a company's sales data and analyse it's performanc
   - I clean the company finacials columns that had the wrong data so that they read the right amounts.
 - I later export the file to my local drive as a csv file for dashboard creation using Power BI.
 
-## Data Analysis
+## Data Analysis/Exploration
 I go through the data and get insights such as:
 1. No. of:
 - Countries the data is representing
