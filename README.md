@@ -39,7 +39,7 @@ I go through the data and get insights such as:
     - Bikes leads in terms of profit generated then followed by accessories
    
 ## Data Visualization
-- Using Power BI, a dashboard displaying [metrics mentioned in the Data Analysis/Exploration](#data-analysis) and more is created.
+- Using Power BI, a dashboard displaying [metrics mentioned in the Data Analysis/Exploration](#data-analysisexploration) and more is created.
 - The dashboard highlights other insights such as:
   - Unit Price vs Unit Cost
   - Product Performance over the years
