@@ -172,6 +172,7 @@ I go through the data and get insights such as:
   ORDER BY percentage DESC; -- Same case as the previous analysis
   ```
   <img src="Assets/rank by transactions.png" alt="country rank by transaction count"> <img src="Assets/rank by quantity ordered in every transaction.png" alt="country rank by items ordered"> <img src="Assets/rank by profit generated.png" alt="country rank by profit">
+
 7.  Items Purchase Analysis:
     - Accessories are the most purchased by count or items ordered
     - Bikes lead in terms of profit generated then followed by accessories
