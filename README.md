@@ -141,7 +141,7 @@ I go through the data and get insights such as:
   <img src="Assets/profit over the years.png" alt="profit over the years">
 4. December emerges as the top performing month, by profit generated over the years (except for the 2 years where the data was not provided).
   - Position 2 and 3 interms of performance cchanges between the pairs July & August and November & October over the years.
-  <img src="Assets/profit by month over the years.png" alt="profit by month over the years"> <img src="Assets/profit by month in all years.png" alt="top 3 best months every year by profit">
+  <img src="Assets/profit by month over the years.png" alt="profit by month over the years">   <img src="Assets/profit by month in all years.png" alt="top 3 best months every year by profit">
 5. Biggest number of purchases originates from customers aged between 25-35 (34%) followed by 35-44 (28%).
 <img src="Assets/customer count by age group.png" alt="customer count by age groups">
 6. Country Ranks:
@@ -178,29 +178,28 @@ I go through the data and get insights such as:
     - Accessories are the most purchased by count or items ordered
     - Bikes lead in terms of profit generated then followed by accessories
     
-    ```sql
-    SELECT Product_Category,
-           COUNT(*) count,
-           COUNT(*) * 100/(SELECT COUNT(*) FROM company_sales) AS percentage
-    FROM company_sales
-    GROUP BY Product_Category; -- Accessories are the mostly purchased items followed by Bikes, then Clothing
-    
-    -- Highest purchased by item count
-    SELECT Product_Category,
-           SUM(Order_Quantity),
-           SUM(Order_Quantity) * 100/(SELECT SUM(Order_Quantity) FROM company_sales) AS percentage
-    FROM company_sales
-    GROUP BY Product_Category; -- Accessories are the ones that are majorly bough by quantity then followed by Clothing and then the bikes
-    
-    -- Highest by Profit
-    SELECT Product_Category,
-           SUM(Profit),
-           SUM(Profit) * 100/(SELECT SUM(Profit) FROM company_sales) AS percentage
-    FROM company_sales
-    GROUP BY Product_Category
-    ORDER BY percentage DESC;
-    ```
-
+  ```sql
+  SELECT Product_Category,
+         COUNT(*) count,
+         COUNT(*) * 100/(SELECT COUNT(*) FROM company_sales) AS percentage
+  FROM company_sales
+  GROUP BY Product_Category; -- Accessories are the mostly purchased items followed by Bikes, then Clothing
+  
+  -- Highest purchased by item count
+  SELECT Product_Category,
+         SUM(Order_Quantity),
+         SUM(Order_Quantity) * 100/(SELECT SUM(Order_Quantity) FROM company_sales) AS percentage
+  FROM company_sales
+  GROUP BY Product_Category; -- Accessories are the ones that are majorly bough by quantity then followed by Clothing and then the bikes
+  
+  -- Highest by Profit
+  SELECT Product_Category,
+         SUM(Profit),
+         SUM(Profit) * 100/(SELECT SUM(Profit) FROM company_sales) AS percentage
+  FROM company_sales
+  GROUP BY Product_Category
+  ORDER BY percentage DESC;
+  ```
   <img src="Assets/purchased items rank.png" alt="item categories ranks">
   <img src="Assets/Leading items by profit.png" alt="leading items by profit">
 
