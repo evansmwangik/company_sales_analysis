@@ -9,6 +9,17 @@ In this project, I go through a company's sales data and analyse it's performanc
 
 ## Data Cleaning
 - I start by first creating a copy of the original file so that we have the raw data still intact throughout our analysis.
+```sql
+CREATE TABLE company_sales
+LIKE sales;
+INSERT INTO company_sales
+SELECT * FROM sales;
+
+-- Data successfully copied 
+SELECT * FROM company_sales;
+```
+
+
 - I then proceed and start by looking for any duplicates.
   - To do this effectively and have consistency through the rest of the analysis, I create an "id" column in the copy table using data present in all rows in the dataset.
 - Data Standardization
