@@ -141,7 +141,7 @@ I go through the data and get insights such as:
   <img src="Assets/profit over the years.png" alt="profit over the years">
 4. December emerges as the top performing month, by profit generated over the years (except for the 2 years where the data was not provided).
   - Position 2 and 3 interms of performance cchanges between the pairs July & August and November & October over the years.
-  <img src="Assets/profit by month over the years.png" alt="profit by month over the years">   <img src="Assets/profit by month in all years.png" alt="top 3 best months every year by profit">
+  <img src="Assets/profit by month over the years.png" alt="profit by month over the years"> <img src="Assets/profit by month in all years.png" alt="top 3 best months every year by profit">
 5. Biggest number of purchases originates from customers aged between 25-35 (34%) followed by 35-44 (28%).
 <img src="Assets/customer count by age group.png" alt="customer count by age groups">
 6. Country Ranks:
@@ -171,9 +171,7 @@ I go through the data and get insights such as:
   GROUP BY Country
   ORDER BY percentage DESC; -- Same case as the previous analysis
   ```
-  <img src="Assets/rank by transactions.png" alt="country rank by transaction count">
-  <img src="Assets/rank by quantity ordered in every transaction.png" alt="country rank by items ordered">
-  <img src="Assets/rank by profit generated.png" alt="country rank by profit">
+  <img src="Assets/rank by transactions.png" alt="country rank by transaction count"> <img src="Assets/rank by quantity ordered in every transaction.png" alt="country rank by items ordered"> <img src="Assets/rank by profit generated.png" alt="country rank by profit">
 7.  Items Purchase Analysis:
     - Accessories are the most purchased by count or items ordered
     - Bikes lead in terms of profit generated then followed by accessories
